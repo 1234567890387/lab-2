@@ -1,0 +1,83 @@
+/* ===== box-sizing: керування блоковою моделлю ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ===== Селектори тегів ===== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 24px;
+  margin-bottom: 20px;
+  background: #1e3a5f;
+  color: #fff;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1e3a5f;
+  border-bottom: 2px solid #1e3a5f;
+  padding-bottom: 4px;
+}
+
+/* ===== Селектор класу + box model (margin, padding, border) ===== */
+.card {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccd3da;
+  border-radius: 8px;
+}
+
+/* ===== Макет на CSS Grid ===== */
+.layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* ===== Селектор ID ===== */
+#contacts {
+  grid-column: 1 / -1;
+  background: #eef3f8;
+}
+
+/* ===== Селектор атрибута ===== */
+a[href^="https"] {
+  color: #0a58ca;
+  font-weight: bold;
+}
+
+/* ===== Псевдокласи ===== */
+a:hover {
+  color: #d63384;
+  text-decoration: underline;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+a:focus {
+  outline: 2px solid orange;
+}
+
+/* ===== Медіазапит для вузького екрана ===== */
+@media (max-width: 600px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 8px;
+  }
+}
