@@ -74,7 +74,11 @@ a:focus {
 /* ===== Медіазапит для вузького екрана ===== */
 @media (max-width: 600px) {
   .layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card {
+    margin: 0;
   }
 
   body {
