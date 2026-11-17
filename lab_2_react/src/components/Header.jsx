@@ -1,8 +1,10 @@
-export default function Header() {
+function Header() {
   return (
     <header>
-      <h1>Юра Дроцюк</h1>
-      <p>Студент спеціальності «Кібербезпека» | yurii.drotsiuk.kb.2025@lpnu.ua</p>
+      <h1 className="my-5 text-3xl font-bold">Юра Дроцюк</h1>
+      <p className="my-4">Студент спеціальності «Кібербезпека»</p>
     </header>
   );
 }
+
+export default Header;

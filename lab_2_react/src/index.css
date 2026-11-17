@@ -1,6 +1,1 @@
 @import "tailwindcss";
-```[cite: 13]
-
-3. Збережіть файл (**`Ctrl + S`**).
-
-Після цього запустіть `npm run dev` у терміналі та застосовуйте утилітарні класи Tailwind прямо всередині JSX-компонентів (`Header.jsx`, `Experience.jsx`, `Education.jsx`, `Footer.jsx`)[cite: 13, 14].
